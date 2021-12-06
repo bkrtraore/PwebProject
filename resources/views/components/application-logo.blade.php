@@ -1,0 +1,1 @@
+<img src="{{ URL::asset('images/logo.jpg')}} " width="245em" height="auto" >
