@@ -16,10 +16,9 @@ class CreateVillesTable extends Migration
         Schema::create('villes', function (Blueprint $table) {
             $table->id('idville');
             $table->string('nomville');
+            $table->integer('code_postal');
             $table->bigInteger('refdepartement')->unsigned();
             $table->foreign('refdepartement')->references('idDepartement')->on('departements');
-            $table->bigInteger('refCP')->unsigned();
-            $table->foreign('refCP')->references('CP')->on('codepostals');
             $table->timestamps();
         });
     }
