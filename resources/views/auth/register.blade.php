@@ -21,6 +21,17 @@
             </div>
 
             <div class="mt-4">
+                <x-jet-label for="datedeNaissance" value="{{ __('datedeNaissance') }}" />
+                <x-jet-input id="datedeNaissance" class="block mt-1 w-full" type="date" name="datedeNaissance" required />
+            </div>
+
+
+            <div class="mt-4">
+                <x-jet-label for="genre" value="{{ __('genre') }}" />
+                <x-jet-input id="genre" class="block mt-1 w-full" type="text" name="genre" :value="old('genre')" required />
+            </div>
+
+            <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
@@ -33,6 +44,22 @@
             <div class="mt-4">
                 <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
                 <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+            </div>
+
+
+            <div class="mt-4">
+                <x-jet-label for="adresseFixe" value="{{ __('adresseFixe') }}" />
+                <x-jet-input id="adresseFixe" class="block mt-1 w-full" type="text" name="adresseFixe" required />
+            </div>
+
+            <div class="mt-4">
+                <x-jet-label for="estproprio" value="{{ __('estproprio') }}" />
+                <x-jet-input id="estproprio" class="block mt-1 w-full" type="checkbox" name="estproprio" required />
+            </div>
+
+            <div class="mt-4">
+                <x-jet-label for="estlocataire" value="{{ __('estlocataire') }}" />
+                <x-jet-input id="estlocataire" class="block mt-1 w-full" type="checkbox" name="estlocataire" required />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())

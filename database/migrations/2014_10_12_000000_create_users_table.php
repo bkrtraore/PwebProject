@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('adresseFixe')->unique();
-            $table->boolean('admin');
+            $table->boolean('admin')->nullable();
             $table->boolean('estproprio');
             $table->boolean('estlocataire');
             $table->rememberToken();
