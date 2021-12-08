@@ -15,7 +15,7 @@ class CreateProprietesTable extends Migration
     {
         Schema::create('proprietes', function (Blueprint $table) {
             $table->bigInteger('idUtilisateur')->unsigned();
-            $table->foreign('idUtilisateur')->references('idUtilisateur')->on('utilisateurs');
+            $table->foreign('idUtilisateur')->references('idUtilisateur')->on('users');
             $table->bigInteger('idMaison')->unsigned();
             $table->foreign('idMaison')->references('idMaison')->on('maisons');
             $table->primary(['idUtilisateur','idMaison']);
