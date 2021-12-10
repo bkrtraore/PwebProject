@@ -1,7 +1,9 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <img src="{{ URL::asset('images/logo.jpg')}} " width="245em" height="auto" >
+            <a href="{{route('welcome')}}">
+                <img src="{{ URL::asset('images/logo.jpg')}} " width="245em" height="auto" >
+            </a>
         </x-slot>
         
         
@@ -12,22 +14,22 @@
             @csrf
 
             <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
+                <x-jet-label for="name" value="{{ __('Nom') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
             <div>
-                <x-jet-label for="name" value="{{ __('Prenom') }}" />
+                <x-jet-label for="name" value="{{ __('Prénom') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="prenom" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="datedeNaissance" value="{{ __('datedeNaissance') }}" />
+                <x-jet-label for="datedeNaissance" value="{{ __('Date de naissance') }}" />
                 <x-jet-input id="datedeNaissance" class="block mt-1 w-full" type="date" name="datedeNaissance" required />
             </div>
 
 
             <div class="mt-4">
-                <x-jet-label for="genre" value="{{ __('genre') }}" />
+                <x-jet-label for="genre" value="{{ __('Genre') }}" />
                 <x-jet-input id="genre" class="block mt-1 w-full" type="text" name="genre" :value="old('genre')" required />
             </div>
 
@@ -37,29 +39,29 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
+                <x-jet-label for="password" value="{{ __('Mot de passe') }}" />
                 <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
+                <x-jet-label for="password_confirmation" value="{{ __('Confirmation mot de passe') }}" />
                 <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
 
             <div class="mt-4">
-                <x-jet-label for="adresseFixe" value="{{ __('adresseFixe') }}" />
+                <x-jet-label for="adresseFixe" value="{{ __('Adresse Fixe') }}" />
                 <x-jet-input id="adresseFixe" class="block mt-1 w-full" type="text" name="adresseFixe" required />
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="estproprio" value="{{ __('estproprio') }}" />
-                <x-jet-input id="estproprio" class="block mt-1 w-full" type="checkbox" name="estproprio" required />
+                <x-jet-label for="estproprio" value="{{ __('Propriétaire') }}" />
+                <x-jet-input id="estproprio" class="block mt-1 w-full" type="checkbox" name="estproprio" value="1"/>
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="estlocataire" value="{{ __('estlocataire') }}" />
-                <x-jet-input id="estlocataire" class="block mt-1 w-full" type="checkbox" name="estlocataire" required />
+                <x-jet-label for="estlocataire" value="{{ __('Locataire') }}" />
+                <x-jet-input id="estlocataire" class="block mt-1 w-full" type="checkbox" name="estlocataire" value="1"/>
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
@@ -81,11 +83,11 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
+                    {{ __('Déjà inscrit ?') }}
                 </a>
 
                 <x-jet-button class="ml-4">
-                    {{ __('Register') }}
+                    {{ __('S\'inscrire') }}
                 </x-jet-button>
             </div>
         </form>

@@ -14,11 +14,11 @@ class CreateProprietesTable extends Migration
     public function up()
     {
         Schema::create('proprietes', function (Blueprint $table) {
-            $table->bigInteger('idUtilisateur')->unsigned();
-            $table->foreign('idUtilisateur')->references('idUtilisateur')->on('users');
+            $table->bigInteger('id')->unsigned();
+            $table->foreign('id')->references('id')->on('users');
             $table->bigInteger('idMaison')->unsigned();
             $table->foreign('idMaison')->references('idMaison')->on('maisons');
-            $table->primary(['idUtilisateur','idMaison']);
+            $table->primary(['id','idMaison']);
             $table->date('dateDebut');
             $table->date('dateFin');
             $table->timestamps();

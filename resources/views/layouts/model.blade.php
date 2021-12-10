@@ -59,7 +59,7 @@
 
     <footer class="bg-primary text-center text-white">
       <div class="text-center p-3">
-       <p> © 2021 Copyright: CQC SA by La Brigade Fantôme</p>
+       <p> © 2021 Copyright : CQC SA by La Brigade Fantôme</p>
       </div>
       </footer>
   </body>

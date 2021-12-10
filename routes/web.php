@@ -14,13 +14,12 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
     return view('welcome');
 });
 
 Route::get('/welcome', [PostController::class, 'index'] )->name('welcome');
-// Route::get('/posts/{id}', [PostController::class, 'show'] )->whereNumber('id');
-//Si un carac autre qu'un nb est rentré, il y aura une erreur ! 
+
 Route::get('/contact', [PostController::class, 'contact'] )->name('contact');
 
 Route::get('/dashboard', function () {

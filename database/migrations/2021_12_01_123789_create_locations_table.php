@@ -15,7 +15,7 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->bigInteger('refUtilisateur')->unsigned();
-            $table->foreign('refUtilisateur')->references('idUtilisateur')->on('users');
+            $table->foreign('refUtilisateur')->references('id')->on('users');
             $table->bigInteger('refAppartement')->unsigned();
             $table->foreign('refAppartement')->references('idAppartement')->on('appartements');
             $table->primary(['refUtilisateur','refAppartement']);
