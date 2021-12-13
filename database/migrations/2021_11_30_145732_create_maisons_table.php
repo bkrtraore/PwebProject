@@ -22,7 +22,7 @@ class CreateMaisonsTable extends Migration
             $table->bigInteger('refville')->unsigned();
             $table->foreign('refville')->references('idville')->on('villes');
             $table->string('nom');
-            $table->string('proprietaire');
+            $table->string('proprietaire')->nullable();
             $table->unsignedInteger('numMaison');
             $table->string('rue');
             $table->timestamps();

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
@@ -38,5 +39,13 @@ Route::get('/videos', function () {
 Route::get('/video1', function() {
     return view('videos.videotest');
 });
+
+Route::get('/addApparel', [DashboardController::class, 'addApparelView'] )->name('addApparel')->middleware(['auth'])->name('dashboard');
+
+Route::post('createApparel',[DashboardController::class, 'createApparel'])->name('createApparel'); 
+
+Route::get('/addAppart', [DashboardController::class, 'addAppartView'] )->name('addAppart')->middleware(['auth'])->name('dashboard');
+
+Route::post('createAppart',[DashboardController::class, 'createAppart'])->name('createAppart'); 
 
 require __DIR__.'/auth.php';
