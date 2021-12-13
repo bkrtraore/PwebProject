@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class appareil extends Model
 {
-    use HasFactory;
+    
+    protected $fillable = [
+        'emplacement',
+        'descriptionEmplacement', 
+        'description'
+    ];
+
 }

@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class appartement extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'reftype',
+       'refMaison',
+       'refSecurite',
+       'nbhabitants'
+    ];
 }
