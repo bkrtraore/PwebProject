@@ -8,7 +8,6 @@
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ url('/') }}">
                         <img src="{{ URL::asset('images/logo.jpg')}} " style="height: 5em; width:auto;">
-                       <!-- <x-jet-application-mark class="block h-9 w-auto" /> -->
                     </a>
                 </div>
             

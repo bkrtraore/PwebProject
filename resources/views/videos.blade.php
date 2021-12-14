@@ -8,14 +8,14 @@
             <div class="container bg-secondary ">
                 <div class="row">
                   <div class="col-sm">
-                    <a href="{{ url('video1') }}" class="list-group-item list-group-item-action ">Cras justo odio</a>
-                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="{{ url('video1') }}" class="list-group-item list-group-item-action ">Installer son lave linge</a>
+                    <a href="#" class="list-group-item list-group-item-action">Vérifier son évier</a>
+                    <a href="#" class="list-group-item list-group-item-action">Installer son lave-vaisselle</a>
                   </div>
                   <div class="col-sm">
-                    <a href="#" class="list-group-item list-group-item-action ">Cras justo odio</a>
-                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="#" class="list-group-item list-group-item-action ">Réduire sa consommation : 5 conseils</a>
+                    <a href="#" class="list-group-item list-group-item-action">Comment être plus économe ?</a>
+                    <a href="#" class="list-group-item list-group-item-action">La veilleuse qui consomme moins</a>
                   </div>
                 </div>
               </div>
