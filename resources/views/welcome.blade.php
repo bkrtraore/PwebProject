@@ -2,6 +2,7 @@
 
 @section('contenu')
 
+
     <span class="border-top border-success" id="container1" style="background-color: #ffffff">
         <center><h1>À propos de CQC SA : </h1></center>
         <p class="text-justify">
@@ -15,75 +16,7 @@ Non odit cupiditate et eaque dolor aut voluptatum fuga quo dolores quidem non mi
     </span>
 
     <span class="border-bottom border-success"  id="container2" style="background-color: #ffffff">
-      <!--
-      <center><h1>Inscrivez-vous</h1></center>
-      
-      <br> 
-      
-      <form>
-        <center>
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">🧑🏻‍🦱</div>
-          </div>
-          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Prenom">
-        </div>
-
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">🧑🏻‍🦱</div>
-          </div>
-          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Nom">
-        </div>
-
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-text">👶 </div> 
-          <input id="date" type="date" value="Date de Naissance">
-         </div>
-
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">📧</div>
-          </div>     
-          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Mail">
-        </div>
-
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">🏠</div>
-          </div>
-          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="addresse">
-        </div>
-        
-        <div class="form-check form-check-inline" style="width: 47%;">
-          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-          <label class="form-check-label" for="inlineCheckbox1">Propriétaire</label>
-        </div>
-        
-        <div class="form-check form-check-inline" style="width: 47%;">
-          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-          <label class="form-check-label" for="inlineCheckbox2">Locataire</label>
-        </div>
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">🤫</div>
-          </div>
-          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Mot de passe">
-        </div>
-        <div class="input-group mb-2 mr-sm-2" style="width: 50%;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">😶</div>
-          </div>
-          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Repeter le mot de passe">
-        </div>
-        </center>
-
-        <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-success">Inscription</button>
-        </div>
-        
-    </form>
-  -->
+     
   </span>
   </span> 
   
